@@ -8,14 +8,15 @@ function btnEncriptar(){
   textArea.value=''
 }
 function btndesEncriptar(){
-  const textodesEncriptado = desencriptar(mensaje.value)
-  textArea.value = textodesEncriptado
-  mensaje.value=''
+  const textodesEncriptado = desencriptar(textArea.value)
+  mensaje.value = textodesEncriptado
+  textArea.value=''
 }
 
 function copiarTexto() {
   mensaje.select();
   document.execCommand("copy");
+  mensaje.value=''
 }
 
 function encriptar(stringEncriptada) {
