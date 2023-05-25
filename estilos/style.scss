@@ -1,0 +1,122 @@
+* {
+  background: #f3f5fc;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 150%;
+}
+.logo{
+    padding-top: 10px;
+    margin-left: 10px;
+    width: 2%;
+}
+main{
+    display: flex;
+    margin-bottom: 50px;
+    margin-left: 80px;
+
+}
+.textArea{
+    border: none;
+    color: #0A3871;
+    margin-top: 90;
+    text-transform: lowercase;
+}
+::placeholder{color:#0A3871}
+    .textArea:focus{
+        outline: none;
+    }
+.mensaje{
+    background: white;
+    background-image: url("img/Muñeco.png");
+    background-repeat: no-repeat;
+    border: none;
+    border-radius: 24px;
+    color: #0A3871;
+    margin-left: 98px;
+    margin-top: 20px;
+    padding-left: 20px;
+    position: fixed;
+}
+.mensaje:focus{
+    outline: none;
+}
+.botones{
+    display: flex;
+    margin-top: 18px;
+
+}
+.btn-desencrip{
+    background: #D8DFE8;
+    border: 1px solid #0A3871;
+    border-radius: 24px;
+    color: #0A3871;
+    cursor: pointer;
+    height: 67px;
+    margin-left: 30px;
+    width: 328px;
+}
+.btn-encrip{
+    background-color: #0A3871;
+    border: 1px solid #0A3871;
+    border-radius: 24px;
+    color: white;
+    cursor: pointer;
+    height: 67px;
+    width: 336px;
+   
+}
+.copiar{
+    border: 1px solid #0A3871;
+    border-radius: 24px;
+    color: #0A3871;
+    cursor: pointer;
+    height: 67;margin-left: 108px;
+    margin-top: 402px;
+    position: absolute;
+    width: 336px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+h6{
+    font-size: small;
+}
+/* Estilos para celulares */
+@media (max-width: 480px) {
+    * {
+      font-size: 16px;
+    }
+  
+    .logo {
+      width: 10%;
+    }
+  
+    main {
+      margin-left: 10px;
+      margin-bottom: 30px;
+      display: block;
+    }
+  
+    .mensaje {
+      /* margin-left: 10px;
+      margin-top: 10px;
+      padding-left: 10px;
+      padding-right: 10px; */
+      width: auto;
+    }
+  
+    .botones {
+      flex-direction: column;
+      align-items: center;
+      margin-top: 5px;
+    }
+  
+    .btn-desencrip,
+    .btn-encrip,
+    .copiar {
+      margin-left: 5px;
+      margin-top: 5px;
+      width: auto;
+    }
+  }
